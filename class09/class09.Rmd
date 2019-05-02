@@ -1,0 +1,103 @@
+---
+title: "class09"
+author: "Elliot Suh"
+date: "4/30/2019"
+output: html_document
+---
+
+#Principal component analysis - reduce dimensionality without reducing signal
+
+```{r}
+wisc.df <- (read.csv("WisconsinCancer.csv"))
+wisc.data <- as.matrix(wisc.df[,3:32])
+rownames(wisc.data) <- wisc.df$id
+
+diagnosis <- as.numeric(wisc.df$diagnosis=="M")
+
+```
+#Q1. 569 samples are observed across 33 variables for a total of 18777 observations.
+#Q2. 10 variables are suffixed with "_mean".
+#Q3. There are 212 malignant diagnoses. 
+
+```{r}
+
+wisc.pr <-prcomp(wisc.data, scale.=TRUE)
+
+plot(wisc.pr$x[,1], wisc.pr$x[,2], xlab="PC1", ylab="PC2", col=(diagnosis+1))
+plot(wisc.pr$x[,1], wisc.pr$x[,3], xlab="PC1", ylab="PC3", col=(diagnosis+1))
+```
+#Q4. The first PCA captures 44.27 percent of the original variance.
+#Q5. 3 PCs are required to capture at least 70% of the original variance.
+#Q6. 7 PCs are required to capture at least 90% of the original variance. 
+#Q7. This plot is totally unintelligible. 
+#Q8. The first plot shows groups that are more distinct. 
+
+```{r}
+pr.var <- wisc.pr$sdev^2
+pve <- (wisc.pr$sdev^2)/(sum(wisc.pr$sdev^2))
+par(mfrow=c(1,2))
+(plot(pve, xlab="Principal Component", ylab="Proportion of Variance Explained", ylim=c(0,1), type="o"))
+
+(plot(cumsum(pve), xlab = "Principal Component", 
+     ylab = "Cumulative Proportion of Variance Explained", 
+     ylim = c(0, 1), type = "o"))
+
+
+```
+
+```{r}
+library(factoextra)
+fviz_eig(wisc.pr, addlabels=TRUE)
+```
+#Q9. -0.26085376 
+#Q10. 5 principle components are required to represent more than 80% of the variation in the original data. 
+
+```{r}
+
+plot(hclust(dist(scale(wisc.data))))
+abline(a = 19, b = 0, col="turquoise", lty=2)
+
+wisc.hclust.clusters <- cutree(hclust(dist(scale(wisc.data))), k=4)
+```
+#Q11. Around height 19
+#Q12. 4 appears to be the best number clusters with this method.
+
+```{r}
+plot(hclust(dist(scale(wisc.data)), method="ward.D2"))
+grps <-  cutree(hclust(dist(scale(wisc.data)), method="ward.D2"), k=2)
+```
+
+```{r}
+par(mfrow=c(1,2))
+plot(wisc.pr$x[,1:2], col=grps)
+plot(wisc.pr$x[,1:2], col=diagnosis+1)
+```
+
+```{r}
+
+wisc.pr.hclust <- hclust(dist(scale(wisc.pr$x[,1:7])), method="ward.D2")
+wisc.pr.hclust.clusters <- cutree(wisc.pr.hclust, k=2)
+table(wisc.pr.hclust.clusters, diagnosis)
+
+```
+
+#Q14. It separates it relatively well.
+#Q15. The previous table does better.
+#Q16. The analysis of wisc.data using the ward.D2 method was the most specific as well as sensitive. 
+
+```{r}
+#url <- "new_samples.csv"
+url <- "https://tinyurl.com/new-samples-CSV"
+new <- read.csv(url)
+npc <- predict(wisc.pr, newdata=new)
+plot(wisc.pr$x[,1:2], col=grps)
+points(npc[,1], npc[,2], col="blue", pch=16)
+```
+```{r}
+gerps <-  cutree(hclust(dist(scale(wisc.data)), method="ward.D2"), k=2)
+gorps = gerps-1
+
+table(gorps, diagnosis)
+```
+
+#Q17. The point on the right. 

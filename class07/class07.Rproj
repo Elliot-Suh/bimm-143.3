@@ -1,0 +1,104 @@
+---
+title: "class7"
+author: "Elliot Suh"
+date: "4/23/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+# functions revisited
+
+```{r}
+source("http://tinyurl.com/rescale-R")
+
+```
+
+```{r}
+rescale (1:10)
+rescale2("a:h")
+```
+
+```{r}
+x <- c(1,2,NA,3,NA)
+y <- c(NA, 3, NA, 3, 4)
+
+both_na <- function(x,y){
+  is.na(x) & is.na(y)
+}
+
+both_na(x,y)
+```
+```{r}
+sum(is.na(x)+is.na(y))
+y2<- c(1,89,97,NA,NA,88, NA)
+
+both_na2(x,y)
+```
+
+```{r}
+Pos_vec <- which(is.na(c(1,2,NA, 4, NA)))
+
+c(2,4,6,8,10)[Pos_vec]
+c(2,4,6,8,10)[c(3,5)]
+
+```
+```{r}
+f <- df1$IDs
+y <- df2$IDs
+z <- df3$IDs
+f
+y
+z
+intersect(f,y)
+
+```
+
+```{r}
+gene_intersect <- function(x,y){
+  cbind(f[f %in% y], y[y %in% f])
+}
+
+gene_intersect(z,y)
+
+```
+```{r}
+gene_intersect2(df1, df2)
+```
+
+```{r}
+x <- c(100,100,100,100,100,100,90, 100)
+m <- c(80, 89, 57, 100, 85, 95, 100)
+drop_low <- function(x){
+s1 <- x
+s1.1 <-(order(x, decreasing = TRUE))
+s1.2 <- s1[s1.1]
+s1.3 <- s1.2[1:(length(s1.2)-1)]
+mean(s1.3)
+
+print(mean(s1.3))
+}
+drop_low(m)
+```
