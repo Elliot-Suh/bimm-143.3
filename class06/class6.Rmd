@@ -1,0 +1,64 @@
+---
+title: "Class 06"
+author: "Elliot Suh"
+date: "4/18/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#### ABOOT
+This is my class 6 R markdown document w/ code and notes for the day!
+**Bold**
+*Italics*
+~Strikethrough~
+_test_
+~~Butts~~
+```{r}
+plot(1:10, type="l", col="steelblue", main="Regular Gnoll", xlab="ylab", ylab="xlab")
+```
+## Reading Example Data
+read.csv()
+```{r}
+read.csv("test1.txt")
+read.table("test2.txt", header=TRUE, sep="$")
+read.table("test3.txt",header=FALSE, sep="")
+```
+
+```{r}
+add <- function(x, y=1){
+  # The Body!!
+  x+y}
+
+add(10)
+
+add(10), y=10
+```
+
+```{r}
+x <- c(1,2,NA,3,10)
+rng <- range(x, na.rm=TRUE)
+(x-rng[1])/(rng[2]-rng[1])
+```
+
+```{r}
+rescale3 <- function(x, na.rm=TRUE, plot=FALSE) {
+ rng <-range(x, na.rm=na.rm)
+ print("Hello")
+ answer <- (x - rng[1]) / (rng[2] - rng[1])
+ print("is it me you are looking for?")
+ if(plot) {
+ plot(answer, typ="b", lwd=4)
+   print("Please don't sing again...")
+ }
+ print("I can see it in ...")
+ return(answer)
+}
+```
+
+```{r}
+rescale3( c(1,3,NA,10),plot=TRUE)
+
+```
