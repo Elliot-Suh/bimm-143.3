@@ -1,0 +1,10 @@
+---
+title: "class12"
+author: "Elliot Suh"
+date: "5/9/2019"
+output: html_document
+---
+```{r}
+library(bio3d)
+hiv<-read.pdb(get.pdb("1HSG"))
+```

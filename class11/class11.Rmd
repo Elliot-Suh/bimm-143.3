@@ -1,0 +1,84 @@
+---
+title: "class11"
+author: "Elliot Suh"
+date: "5/7/2019"
+output: github_document
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=TRUE)
+```
+
+```{r}
+DES <- read.csv("Data Export Summary.csv")
+
+DES
+
+DES$Total/sum(DES$Total)
+
+paste( sum(DES$Proteins)/sum(DES$Total)*100,"% are proteins")
+```
+
+```{r}
+library(datapasta)
+```
+
+```{r}
+data.frame(stringsAsFactors=FALSE,
+   Experimental.Method = c("X-Ray", "Other", "NMR", "Multi Method",
+                           "Electron Microscopy", "Total"),
+              Proteins = c(126880, 256, 11062, 129, 2277, 140604),
+   Nucleic_Acids = c(2012, 4, 1279, 5, 31, 3331),
+    ProteinComplex = c(6547, 6, 259, 2, 800, 7614),
+                 Other = c(8, 13, 8, 1, 0, 30),
+                 Total = c(135447, 279, 12608, 137, 3108, 151579)
+)
+
+```
+
+#Q2. There are 1157 HIV-1 protease structures in PDB
+#Q3. Hydrogen is not displayed as it is ubiquitous, therefore only the oxygen of the water is displayed
+#Q4. HOH 127
+#Q5. The beta sheet formed by the intersection of the two chains would not form without the homodimer.
+```{r}
+library(bio3d)
+
+pdb <- read.pdb("1hsg.pdb")
+pdb
+attributes(pdb)
+
+```
+#Q6. There are 128 residues in the protein with a water molecule at 127 and MK1 and 1.
+#Q7. 
+
+```{r}
+head(pdb$atom)
+pdb$atom[1:2, c("eleno", "elety", "x","y","z")]
+pdb$atom$elety[1:2]
+pdb$xyz
+dim(pdb$xyz)
+pdb$xyz[ 1, atom2xyz(1:2) ]
+atom.select(pdb, string="protein")
+```
+
+```{r}
+prot.pdb <- atom.select(pdb, "protein", value=TRUE)
+write.pdb(prot.pdb, file="1hsg_protein.pdb")
+lig.pdb <- atom.select(pdb, "ligand", value=TRUE)
+write.pdb(lig.pdb, file="1hsg_protein.pdb")
+```
+
+```{r}
+
+aa <- get.seq("1ake_A")
+b <- blast.pdb(aa)
+hits<-plot(b)
+
+
+```
+
+```{r}
+ids <- c("1TND_B","1AGR_A","1TAG_A","1GG2_A","1KJY_A","4G5Q_A")
+files <- get.pdb(ids, split = TRUE)
+
+
+```
