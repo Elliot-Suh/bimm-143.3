@@ -1,0 +1,101 @@
+CLUSTAL O(1.2.4) multiple sequence alignment
+
+
+Platypus                ---------------------MPSPKLNKSSSSSLL--------------PNAKSAAGPV	25
+Otolemur_garnettii      ---------------------MPNSRPAKPLAPSLALSPSPGASPSWRAMPKPSDLLGAR	39
+Domestic_cat            ---------------------MPNPRPAKPSAPSLALGPSPGASPSWRAGPKTSDPLGAK	39
+Domestic_dog            ---------------------MPNPRPAKPSAPSLAPGPSPGALPSWRAAPKASDLLGAK	39
+Human                   ---------------------MPNPRPGKPSAPSLALGPSPGASPSWRAAPKASDLLGAR	39
+Nanorana_parkeri        ---------------------MPSPQASKLTPASS-----------------AESDSQPD	22
+Xenopus_tropicalus      ------------------------------------------------------------	0
+Xenopus_laevis          MARLSGDRWLCPKWMGSLNCRMPNPQNPKATSAPS-----------------KESETQPD	43
+                                                                                    
+
+Platypus                SKGAEPVARGVSG-FHSQEALLNPRYATATASSPQPQPSL-PAFPIMMVTPPPGRLSTSP	83
+Otolemur_garnettii      SPGGTFQGRDLRGQAHTSS--------SALNPMPPSQLQL--------------------	71
+Domestic_cat            GPGATFQGRDLRGGTHAS---------SSLNPMPPSQLQL-PTVPLVMVAPSGTRLGPSP	89
+Domestic_dog            GPGVTFQGRDLRGGTHAS---------SSLNPMPPSQLQL-PTVPLVMVAPSGARLGPSP	89
+Human                   GPGGTFQGRDLRGGAHASS--------SSLNPMPPSQLQL-PTLPLVMVAPSGARLGPLP	90
+Nanorana_parkeri        EKGKGQISQWNRRGAGV-----------------GSQMHQPHQHPYIMANPS-ASFSSTS	64
+Xenopus_tropicalus      ------------------------------------------------------------	0
+Xenopus_laevis          GKGKEQINPWSRRGAGV-----------------ISQLQQNH---GVMVTPS-AGFSPPS	82
+                                                                                    
+
+Platypus                HLQALLQDKQQFVQQL------------------S-IENRGRTPFLHVTPLS-SPSLLNV	123
+Otolemur_garnettii      ----------------------------------STVDAHTRTPVLQVHPLD-SPAMISL	96
+Domestic_cat            HLQALLQDRPHFMHQL------------------STVDTHARTPVLQVRPLD-SPAMISL	130
+Domestic_dog            HLQALLQDRPHFMHQL------------------STVGTHTRTPVLQVRPLD-SPAMISL	130
+Human                   HLQALLQDRPHFMHQL------------------STVDAHARTPVLQVHPLE-SPAMISL	131
+Nanorana_parkeri        YLRAMLHDSKQAVVIHP-----------------FTRDHASQSSVLHLAPSASSSSILNM	107
+Xenopus_tropicalus      ------------------------------------------------------------	0
+Xenopus_laevis          QLQALLEDKKQTVVFHPNPSLMQVGVLNTELLSKLSRDTASQSPIIHLSPT-SSTSILNL	141
+                                                                                    
+
+Platypus                PPP---TGVFSLKARPAQLHSLSHGINLASLEWVPKEPTNTLTNYLCAVPSPGAGEGRVR	180
+Otolemur_garnettii      PPPPATTGVFSLKARPG----LPPGINVASLEWVSKEPA-----LLCTFPSPSVP-----	142
+Domestic_cat            PPPTAATGVFSLKARPG----LPPGINVASLEWVSREPA-----LLCTFPSPSTP-----	176
+Domestic_dog            PPPTAATSVFSLKARPG----LPPGINVASLEWVSREPA-----LLCTFPSPSTP-----	176
+Human                   TPPTTATGVFSLKARPG----LPPGINVASLEWVSREPA-----LLCTFPNPSAP-----	177
+Nanorana_parkeri        QP----TRLFPLVTKHK-QHAAVQGMKPGSLGWVQHESSSGKNQEDDVNKK-----GTVP	157
+Xenopus_tropicalus      ------------------------------------------------------------	0
+Xenopus_laevis          QP----ARLYPVMAKHKNQHPITQGFNLTSLGWAQQEARLGKPEEVILGKN-----SST-	191
+                                                                                    
+
+Platypus                FPAIRCHSPGDTAAPRPALKKESAAPSSPDGSHPLLANGACRWPGCEKVFEESKEFLKHF	240
+Otolemur_garnettii      -------------------RKDSTLSAAPQSSYPLLANGVCKWPGCEKVFEEPEDFLKHC	183
+Domestic_cat            -------------------RKDSTLSTXPQGSYSLLANGVCKWPGCEKVFEEPEDFLKHC	217
+Domestic_dog            -------------------RKDSTLPTVPQGSYSLLANGVCKWPGCEKVFEEPEDFLKHC	217
+Human                   -------------------RKDSTLSAVPQSSYPLLANGVCKWPGCEKVFEEPEDFLKHC	218
+Nanorana_parkeri        SYGQE--HPKNIEHVRSNTTNDGQDKDGAEPVHPAQYSGGCKFPWCEKTLADHKHFLRHL	215
+Xenopus_tropicalus      -----------------------------------------------QKKAGGQNKERHL	13
+Xenopus_laevis          FSSLS--HSQPLNTVKTQKKLGVQNKESPEPICPVYYRGACTFPGCGKAFEDHRHFLRHL	249
+                                                                       :     ..  :* 
+
+Platypus                HTDH-RMDEKGRAQCLVQKEVVQSLEQQLVLEKEKLSAMQAHLTGKLSLPKLPSSISTEK	299
+Otolemur_garnettii      QADH-LLDEKGRAQCLLQTEVVQSLEQKLVLEKEKLGAMQAHLAGKMALTKAPSVTSSDK	242
+Domestic_cat            QADH-LLDEKGRAQCLLQREVVQSLEQQLVLEKEKLGAMQAHLAGKMALTKAPSTASSDK	276
+Domestic_dog            QADH-LLDEKGRAQCLLQREVVQSLEQQLVLEKEKLGAMQAHLAGKMTLTKAPSTASSDK	276
+Human                   QADH-LLDEKGRAQCLLQREMVQSLEQQLVLEKEKLSAMQAHLAGKMALTKASSVASSDK	277
+Nanorana_parkeri        YSDHHHLDDKTTVQCLIQHEVVHNLEEKLAMEKQRLHEMQSFMTGKHGT--AHLSK---Q	270
+Xenopus_tropicalus      YSDH-HLDDKSTVQCLLQTEVVHRLEEKLAVEKQRLHDMQSQMSGKLNTHTITLSK---Q	69
+Xenopus_laevis          HSDH-HLDDKSTVQCLIQTEVVHKLEEQLAVEKERLHHMQSQMSGKLNTQALHLSK---Q	305
+                         :**  :*:*  .***:* *:*: **::*.:**::*  **: ::**             :
+
+Platypus                PNGCLPGT-LSPSLATAWP-------SSKESPDSLFAMRRHLWSSHGVSMCPDILHNMEY	351
+Otolemur_garnettii      GSCCLVAAGTQGSVVPTWP-------SPREASDSLFAVRRHLWGSHGNSTFPDFFHNMDY	295
+Domestic_cat            GSCCIVATGTPAATGPAWP-------SPQEAPDGLFAVRRHLWGSHGNSTFPEFFHNMDY	329
+Domestic_dog            GSCCIVAAGTPATTGPAWS-------SPQEAPDGLFAVRRHLWGSHGNSTFPEFFHNMDY	329
+Human                   GSCCIVAAGSQGPVVPAWS-------GPREAPDSLFAVRRHLWGSHGNSTFPEFLHNMDY	330
+Nanorana_parkeri        RERSLLLHQSHYSGVSNWPVLDLTVPLQEGLPDTVLALRRPLWEGGSVNIFHDMTNCIEY	330
+Xenopus_tropicalus      RECGLILHPTH-PTISPWSSLDLSSPLQKEFSDTIMALRRQLWEGSSLNIFQNMANCMEY	128
+Xenopus_laevis          RECGLILHPTH-PSISAWSGLDLSSPLQKEFSDTILALRRQLWEGSSLNIFQNMANCIEY	364
+                         .  :            *          .   * ::*:** ** . . .   :: : ::*
+
+Platypus                FKFNNMRPPFTYATLIRWAILEAPEKQRTLNEIYHWFTRMFAYFRNQPATWKNAIRHNLS	411
+Otolemur_garnettii      FKFHNMRPPFTYATLIRWAILEAPEKQRTLNEIYRWFTRMFAYFRNHPATWKNAIRHNLS	355
+Domestic_cat            FKFHDMRPPFTYATLIRWAILEAPEKQRTLNEIYHWFTRMFAFFRNHPATWKNAIRHNLS	389
+Domestic_dog            FKFHNMRPPFTYATLIRWAILEAPEKQRTLNEIYHWFTRMFAFFRNHPATWKNAIRHNLS	389
+Human                   FKFHNMRPPFTYATLIRWAILEAPEKQRTLNEIYHWFTRMFAFFRNHPATWKNAIRHNLS	390
+Nanorana_parkeri        YKNNNVRPPFTYASLIRWAIQESPQKQLALNEIYQWFTRMFAFFRLNKVTWKGL------	384
+Xenopus_tropicalus      YKTNNVRPPFTYASLIRWAILESPQKQLALNEIYHWFTRMFAFFRYNTATWKNAVRHNLS	188
+Xenopus_laevis          YKTNNVRPPFTYASLIRWAILESPQKQLALNEIYHWFTRMFAFFRYNTATWKNAVRHNLS	424
+                        :* :::*******:****** *:*:** :*****:*******:** : .***.       
+
+Platypus                LHKCFVRVENEKGAVWTVDEVEYRRKRSQRPSRDHDVKRLLPYAQLALAESWLPL-----	466
+Otolemur_garnettii      LHKCFVRVESEKGAVWTVDEFEFRKKRSQRPSRCSNPTPGP-------------------	396
+Domestic_cat            LHKCFVRVESEKGAVWTVDEFEFRKKRSQRPSRCSNPTPGP-------------------	430
+Domestic_dog            LHKCFVRVESEKGAVWTVDEFEFRKKRSQRPSRSSNPTPGP-------------------	430
+Human                   LHKCFVRVESEKGAVWTVDELEFRKKRSQRPSRCSNPTPGP-------------------	431
+Nanorana_parkeri        ----------YLGAVWMVDEAEFQRKRAVRGSR---------------------------	407
+Xenopus_tropicalus      LHKCFVRVENIKGAVWMVDELEFQRKRGVRNSR*YLMLPLAPVHRFPCAKC*VGPFLFVK	246
+Xenopus_laevis          LHKCFVRVENIKGAVWMVDELEFQRKRGVRNSR---------------------------	457
+                                    **** *** *:::**. * **                           
+
+Platypus                ----PLASS--------	471
+Otolemur_garnettii      -----------------	396
+Domestic_cat            -----------------	430
+Domestic_dog            -----------------	430
+Human                   -----------------	431
+Nanorana_parkeri        -----------------	407
+Xenopus_tropicalus      LHPDPFSDCTGT*YPGX	262
+Xenopus_laevis          -----------------	457

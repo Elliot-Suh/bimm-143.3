@@ -1,0 +1,35 @@
+---
+title: "findagene"
+author: "Elliot Suh"
+date: "6/3/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(bio3d)
+```
+```{r}
+fasta.seq <- read.fasta("fasta protein align.txt")
+foxp3.matrix <- seqidentity(fasta.seq)
+rownames(foxp3.matrix)
+```
+```{r}
+jpeg(file="heatmap2.jpg")
+heatmap(foxp3.matrix, margins=c(11, 11))
+
+```
+
+```{r}
+es.annotate <- function(x){
+ann <- pdb.annotate(x)
+paste0(c("PDB Identifier: ", ann$structureId, " Method: ", ann$experimentalTechnique, " Resolution: ", ann$resolution, " Source: ", ann$source))}
+es.annotate("2KIU")
+```
+```{r}
+blast.pdb("Foxp3 Protein.txt")
+pdb.annotate("Foxp3 Protein.txt")
+```
